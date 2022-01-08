@@ -48,11 +48,11 @@ export const Task = ({ task }) => {
             >See Detail</Text>
           </Link>
           <ButtonClick
-          color={'red'}
-          text={'Delete'}
-          size={'xs'}
-          onClick={() => dispatch(deleteTask(task))}
-        />
+            color={'red'}
+            text={'Delete'}
+            size={'xs'}
+            onClick={() => dispatch(deleteTask(task))}
+          />
         </Flex>
       </Box> 
     </Flex>
