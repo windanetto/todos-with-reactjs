@@ -3,7 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import TaskDetail from './TaskDetail';
 import TaskList from './TaskList';
 
-const AppRouting = () => {
+const HomeRouting = () => {
   const routes = useRoutes([
     { path: '/', element: <TaskList /> },
     { path: 'detail/:id', element: <TaskDetail />}
@@ -12,4 +12,4 @@ const AppRouting = () => {
   return routes;
 }
 
-export default AppRouting
+export default HomeRouting

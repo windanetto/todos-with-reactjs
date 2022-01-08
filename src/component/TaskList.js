@@ -12,9 +12,6 @@ export const TaskList = () => {
   useEffect(() => {
     dispatch(getAllTasks())
   }, []);
-
-  // const taskList = tasks;
-  // console.log(taskList)
   
   if (tasks) {
     return (

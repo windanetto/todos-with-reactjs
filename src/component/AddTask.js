@@ -2,13 +2,7 @@ import { Box, Checkbox, Flex, Spacer, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../store/action/apiAction';
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-  Input
-} from '@chakra-ui/react'
+import { FormControl, Input } from '@chakra-ui/react'
 import ButtonClick from './ButtonClick';
 import { useNavigate } from 'react-router-dom';
 
@@ -16,7 +10,6 @@ const AddTask = () => {
   const [todo, setTodo] = useState('');
   const [completed, setCompleted] = useState(false);
   const [userId, setUserId] = useState(5);
-  const [isEmpty, setIsEmpty] = useState(true)
   const dispatch = useDispatch();
   const history = useNavigate()
 
@@ -32,8 +25,6 @@ const AddTask = () => {
     dispatch(addTask(task))
 
     history('/')
-    
-
     setTodo('')
     setCompleted(false)
   }

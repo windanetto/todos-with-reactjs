@@ -2,12 +2,11 @@ import { Flex } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Header from './Header';
 import AddTask from './AddTask';
-import AppRouting from './HomeRouting';
+import HomeRouting from './HomeRouting';
 
 
 export const Home = () => {
   const [showAdd, setshowAdd] = useState(false)
- 
 
   return (
     <Flex 
@@ -28,7 +27,7 @@ export const Home = () => {
 
       {showAdd && <AddTask />}
 
-      <AppRouting />
+      <HomeRouting />
     </Flex>
   )
 }

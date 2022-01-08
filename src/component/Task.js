@@ -9,8 +9,6 @@ export const Task = ({ task }) => {
   const [checked, setChecked] = useState(task.completed);
   const dispatch = useDispatch();
   const path = `/detail/${task.id}`;
-  
-
 
   const updTask = (e) => {
     e.preventDefault();
@@ -56,9 +54,7 @@ export const Task = ({ task }) => {
           onClick={() => dispatch(deleteTask(task))}
         />
         </Flex>
-        
-      </Box>
-      
+      </Box> 
     </Flex>
   )
 }
